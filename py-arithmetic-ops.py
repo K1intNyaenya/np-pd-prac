@@ -49,3 +49,33 @@ print("Floor Division Result:", floor_division_result)
 # operator precedence
 result = selling_price + buying_price * 2  # multiplication has higher precedence than addition
 print("Result of selling_price + buying_price * 2:", result)
+
+# note that parentheses can be used to change order of operations
+result_with_parentheses = (selling_price + buying_price) * 2  # addition is performed first due to parentheses
+print("Result of (selling_price + buying_price) * 2:", result_with_parentheses)
+
+# to check whether a number is odd or even, we can use modulus operator
+number = int(input("Enter a number: ")) # taking input from user and converting it to integer
+if number % 2 == 0:
+    print(number, "is even.")
+else:   
+    print(number, "is odd.")
+
+# practice question 1
+units = 200
+price_per_unit = 15
+tax_rate = 1.16
+
+total_cost = (units * price_per_unit) * tax_rate
+print("Total cost including tax:", total_cost)
+
+# py random module
+import random as rnd
+py_guess = rnd.randint(1, 10)  # generates a random integer between 1 and 10
+
+my_guess = int(input("Guess a number between 1 and 10: "))
+
+if my_guess == py_guess:
+    print("You guessed right! The number was", py_guess)
+else:
+    print("Wrong guess! The number was", py_guess)  
