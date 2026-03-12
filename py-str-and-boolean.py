@@ -97,3 +97,19 @@ print(number > 0) # checking if the number is greater than 0
 number = int(input("Enter a number: "))
 print(number % 2 == 0) # checking if the number is even
 print(number % 2 != 0) # checking if the number is odd
+
+
+def is_even(num):
+    return num % 2 == 0
+print(is_even(4)) # checking if 4 is even
+print(is_even(5)) # checking if 5 is even
+
+def is_odd(num):
+    return num % 2 != 0
+print(is_odd(4)) # checking if 4 is odd
+print(is_odd(5)) # checking if 5 is odd
+
+def adult_checker(age):
+    return age >= 18
+print(adult_checker(20)) # checking if 20 is an adult
+print(adult_checker(15)) # checking if 15 is an adult
