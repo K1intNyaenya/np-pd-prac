@@ -75,3 +75,25 @@ print(f'My name is {name}') # using f-strings to insert the string into another 
 
 ## Boolean values and Boolean operations
 # Boolean values are either True or False
+x = 9
+y = 10
+
+print(x > y) # checking if x is greater than y
+print(x < y) # checking if x is less than y
+print(x == y) # checking if x is equal to y
+print(x != y) # checking if x is not equal to y
+print(x >= y) # checking if x is greater than or equal to y
+print(x <= y) # checking if x is less than or equal to y
+
+# prac question
+score = int(input("Enter your score: "))
+print(score >= 50) # checking if the score is greater than or equal to 50
+
+# prac question 2 to check if a number is positive or negative
+number = int(input("Enter a number: "))
+print(number > 0) # checking if the number is greater than 0
+
+# prac question 3 to check if a number is even or odd
+number = int(input("Enter a number: "))
+print(number % 2 == 0) # checking if the number is even
+print(number % 2 != 0) # checking if the number is odd
