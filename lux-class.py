@@ -40,9 +40,41 @@ class Person:
     def check_driving_license(self):
         return self.eligibility.check_eligibility()
 
+# testing the person class
 
 name = input("Enter your name: ")
 age = int(input("Enter your age: "))
 
 person = Person(name, age)
 print(person.check_driving_license()) 
+
+# class bank account 
+
+class BankAccount:
+    def __init__(self, name, account_number, balance=0):
+        self.name = name
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        return f"Deposited {amount}. New balance is {self.balance}."
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            return "Insufficient funds."
+        else:
+            self.balance -= amount
+            return f"Withdrew {amount}. New balance is {self.balance}."
+
+    def check_balance(self):
+        return f"Current balance is {self.balance}."
+
+# testing the bank account class
+name = input("Enter your Account name: ")
+account_number = input("Enter your Account number: ")
+account = BankAccount(name, account_number)
+
+print(account.deposit(1000))
+print(account.withdraw(500))
+print(account.check_balance())
